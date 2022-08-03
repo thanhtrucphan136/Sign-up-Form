@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'stray';
-    src: url(./Norse-Bold.otf);
+    src: url(Norse-Bold.otf);
 }
 :root{
     --color: rgba(251, 40, 40, 0.5);
 }
 html, body{
-   background: url(./background.jpeg) no-repeat center fixed;
+   background: url(background.jpeg) no-repeat center fixed;
    background-size: cover;
    color: white;
 }
