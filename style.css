@@ -1,4 +1,10 @@
-
+@font-face {
+    font-family: 'stray';
+    src: url(/Norse-Bold.otf);
+}
+:root{
+    --color: rgba(251, 40, 40, 0.5);
+}
 html, body{
    height: 100%;
    background-image: url(/background.jpeg);
@@ -8,16 +14,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 510px;
 }
 .left{
-    
-    padding-left: 20px;
     margin-bottom: 0;
     border-radius: 2em;
 }
+.right{
+    font-family: 'stray', serif;
+    font-size: 80px;
+    margin-top: 100px;
+    margin-right: 400px;
+}
+h2{
+    font-family: 'stray', serif;
+    font-size: 40px;
+}
 .title{
     width: 100%;
+    font-family: 'stray', serif;
 }
 form {
     display: flex;
@@ -31,14 +45,51 @@ form {
     display: flex;
     flex-flow: column wrap;
     width: 40%;
+    font-family: 'stray', serif;
 }
-
+label{
+    font-size: 18px;
+}
 input{
     border-radius: 2em;
-    border: 1px solid rgba(251, 40, 40, 0.5);
+    border: 1px solid var(--color);
     background-color: rgba(176, 62, 62, 0.3);
     margin-top: 5px;
+    color: white;
+    padding: 7px;
 }
+input:focus{
+    outline: none;
+    color: white;
+    border-color: var(--color);
+    background-color: var(--color);
+}
+button{
+    font-family: 'stray', serif;
+    padding: 15px 10px;
+    border-radius: 1em;
+    border: none;
+    background-color: var(--color);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(187, 91, 1);
+}
+p{
+    font-family: 'stray', serif;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(207, 217, 21);
+}
+a:hover{
+    color: rgb(187, 91, 1);
+    text-decoration: underline;
+}
+
 
 
 
