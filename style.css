@@ -91,6 +91,12 @@ a:hover{
     text-decoration: underline;
 }
 
-
-
-
+@media screen and (max-width:1000px){
+    body{
+        flex-direction: column;
+    }
+    .right{
+        margin-left: 400px;
+        margin-top: 0;
+    }
+}
